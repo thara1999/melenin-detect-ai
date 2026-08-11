@@ -12,7 +12,7 @@ ml/datasets/
 ml/training/
 
 # Models
-ml/models/*.onnx
+
 ml/models/*.keras
 
 # Python
