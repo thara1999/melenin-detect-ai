@@ -26,9 +26,13 @@ async function main() {
     );
 
     // React Router support
-    app.get("*", (_req, res) => {
-      res.sendFile(join(distDir, "index.html"));
-    });
+    app.use((req, res, next) => {
+  if (req.path.startsWith("/api")) {
+    return next();
+  }
+
+  res.sendFile(join(distDir, "index.html"));
+});
 
     app.listen(PORT, "0.0.0.0", () => {
       console.log("=================================");

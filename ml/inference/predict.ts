@@ -808,7 +808,25 @@ await tryLoadOnnx();
 if(
 ortModelLoaded
 ){
+// ======================================
+// Condition Helpers
+// ======================================
 
+function getConditionDescription(condition: any): string {
+  return (
+    condition.description ??
+    condition.cancerDescription ??
+    "No description available."
+  );
+}
+
+function getRecommendations(condition: any): string[] {
+  return (
+    condition.recommendations ?? [
+      "Consult a dermatologist for proper evaluation."
+    ]
+  );
+}
 const result =
 await runOnnxInference(
  imageData
