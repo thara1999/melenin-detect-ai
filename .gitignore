@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Environment
+.env
+
+# Dataset
+ml/datasets/
+
+# Training
+ml/training/
+
+# Models
+ml/models/*.onnx
+ml/models/*.keras
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

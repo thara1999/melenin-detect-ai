@@ -1,0 +1,16 @@
+tf2onnx1.17.0 None:���
+�
+input
+4functional_1_1/efficientnetb0_1/rescaling_1/Cast/x:01functional_1_1/efficientnetb0_1/rescaling_1/mul:0/functional_1_1/efficientnetb0_1/rescaling_1/mul"Mul
+�
+1functional_1_1/efficientnetb0_1/rescaling_1/mul:0
+1functional_1_1/efficientnetb0_1/rescaling_1/add:05functional_1_1/efficientnetb0_1/normalization_1/Sub:03functional_1_1/efficientnetb0_1/normalization_1/Sub"Add
+�
+5functional_1_1/efficientnetb0_1/normalization_1/Sub:0
+9functional_1_1/efficientnetb0_1/normalization_1/truediv:03functional_1_1/efficientnetb0_1/rescaling_1_2/mul:01functional_1_1/efficientnetb0_1/rescaling_1_2/mul"Mul
+�
+3functional_1_1/efficientnetb0_1/rescaling_1_2/mul:0
+8functional_1_1/efficientnetb0_1/rescaling_1_2/Cast_1/x:03functional_1_1/efficientnetb0_1/rescaling_1_2/add:01functional_1_1/efficientnetb0_1/rescaling_1_2/add"Add
+�
+3functional_1_1/efficientnetb0_1/rescaling_1_2/add:0>functional_1_1/efficientnetb0_1/stem_bn_1/batchnorm/mul_1__6:0<functional_1_1/efficientnetb0_1/stem_bn_1/batchnorm/mul_1__6"	Transpose*
+perm@
